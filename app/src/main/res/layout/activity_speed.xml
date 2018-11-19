@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrencyActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/milometer"
+        android:layout_marginBottom="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_speed_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Speed in M/S"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_marginBottom="20dp"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        />
+
+    <TextView
+        android:id="@+id/converted_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
+        android:hint="Speed in KM/H"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="5dp"
+        android:maxLength="10"
+        />
+
+</LinearLayout>
